@@ -1,0 +1,234 @@
+﻿{
+  "$schema": "../.hmiframework/Schema/ControlDescription.Schema.json",
+  "apiVersion": 1,
+  "name": "TcHmiProgressBarControl",
+  "namespace": "TcHmi.Controls.TcHmiProgressBar",
+  "displayName": "TcHmiProgressBarControl",
+  "version": {
+    "full": "1.0.0.0",
+    "major": 1,
+    "minor": 0,
+    "revision": 0,
+    "build": 0
+  },
+  "visible": true,
+  "themeable": "Standard",
+  "base": "TcHmi.Controls.System.TcHmiControl",
+  "description": "Animated ProgressBar with Label.",
+  "properties": {
+    "containerControl": false,
+    "geometry": {
+      "width": 250,
+      "height": 60
+    }
+  },
+  "template": "Template.html",
+  "icons": [
+    {
+      "name": "Icons/16x16.png",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "name": "Icons/24x24.png",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "name": "Icons/32x32.png",
+      "width": 32,
+      "height": 32
+    },
+    {
+      "name": "Icons/64x64.png",
+      "width": 64,
+      "height": 64
+    }
+  ],
+  "dependencyFiles": [
+    {
+      "name": "TcHmiProgressBarControl.js",
+      "type": "JavaScript",
+      "description": "Contains all the main logic."
+    },
+    {
+      "name": "Style.css",
+      "type": "Stylesheet",
+      "description": "Theme independent style"
+    }
+  ],
+  "themes": {
+    "Base": {
+      "resources": [
+        {
+          "name": "Themes/Base/Style.css",
+          "type": "Stylesheet",
+          "description": "Theme dependent style"
+        }
+      ]
+    },
+    "Base-Dark": {
+      "resources": [
+        {
+          "name": "Themes/Base-Dark/Style.css",
+          "type": "Stylesheet",
+          "description": "Theme dependent style"
+        }
+      ]
+    }
+  },
+  "attributes": [
+    {
+      "name": "data-tchmi-progressbar-value",
+      "displayName": "Value",
+      "propertyName": "Value",
+      "propertySetterName": "setValue",
+      "propertyGetterName": "getValue",
+      "visible": true,
+      "type": "tchmi:general#/definitions/Number",
+      "category": "ProgressBar",
+      "description": "ProgressBar Value.",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": false,
+      "defaultValue": 50,
+      "defaultValueInternal": 50
+    },
+    {
+      "name": "data-tchmi-progressbar-min",
+      "displayName": "Min",
+      "propertyName": "Min",
+      "propertySetterName": "setMin",
+      "propertyGetterName": "getMin",
+      "visible": true,
+      "type": "tchmi:general#/definitions/Number",
+      "category": "ProgressBar",
+      "description": "ProgressBar Min Value.",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": false,
+      "defaultValue": 0,
+      "defaultValueInternal": 0
+    },
+    {
+      "name": "data-tchmi-progressbar-max",
+      "displayName": "Max",
+      "propertyName": "Max",
+      "propertySetterName": "setMax",
+      "propertyGetterName": "getMax",
+      "visible": true,
+      "type": "tchmi:general#/definitions/Number",
+      "category": "ProgressBar",
+      "description": "ProgressBar Max Value.",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": false,
+      "defaultValue": 100,
+      "defaultValueInternal": 100
+    },
+    {
+      "name": "data-tchmi-progressbar-label",
+      "displayName": "Label",
+      "propertyName": "Label",
+      "propertySetterName": "setLabel",
+      "propertyGetterName": "getLabel",
+      "visible": true,
+      "type": "tchmi:general#/definitions/String",
+      "category": "ProgressBar",
+      "description": "Label under the progressbar.",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": false,
+      "defaultValue": "Label",
+      "defaultValueInternal": "Label"
+    },
+    {
+      "name": "data-tchmi-progressbar-fontsize",
+      "displayName": "LabelFontSize",
+      "propertyName": "LabelFontSize",
+      "propertySetterName": "setLabelFontSize",
+      "propertyGetterName": "getLabelFontSize",
+      "visible": true,
+      "type": "tchmi:general#/definitions/Number",
+      "category": "ProgressBar",
+      "description": "Label Font Size",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": false,
+      "defaultValue": 14,
+      "defaultValueInternal": 14
+    },
+    {
+      "name": "data-tchmi-progressbar-label-color",
+      "propertyName": "LabelColor",
+      "propertySetterName": "setLabelColor",
+      "propertyGetterName": "getLabelColor",
+      "displayName": "LabelColor",
+      "visible": true,
+      "themeable": "Standard",
+      "displayPriority": 10,
+      "type": "tchmi:framework#/definitions/SolidColor",
+      "category": "Colors",
+      "description": "The color of the label.",
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "defaultValue": "rgba(0, 0, 0, 1)",
+      "defaultValueInternal": "rgba(0, 0, 0, 1)"
+    },
+    {
+      "name": "data-tchmi-progressbar-color",
+      "propertyName": "ProgressBackgroundColor",
+      "propertySetterName": "setProgressBackgroundColor",
+      "propertyGetterName": "getProgressBackgroundColor",
+      "displayName": "ProgressBackgroundColor",
+      "visible": true,
+      "themeable": "Standard",
+      "displayPriority": 10,
+      "type": "tchmi:framework#/definitions/SolidColor",
+      "category": "Colors",
+      "description": "The background color of the progressbar.",
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "defaultValue": "rgba(71, 71, 71, 1)",
+      "defaultValueInternal": "rgba(71, 71, 71, 1)"
+    },
+    {
+      "name": "data-tchmi-progressbar-bar-color",
+      "propertyName": "ProgressBarColor",
+      "propertySetterName": "setProgressBarColor",
+      "propertyGetterName": "getProgressBarColor",
+      "displayName": "ProgressBarColor",
+      "visible": true,
+      "themeable": "Standard",
+      "displayPriority": 10,
+      "type": "tchmi:framework#/definitions/SolidColor",
+      "category": "Colors",
+      "description": "The progressbar color.",
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "defaultValue": "rgba(36, 219, 0, 1)",
+      "defaultValueInternal": "rgba(36, 219, 0, 1)"
+    }
+  ],
+  "attributeCategories": [
+    {
+      "name": "ProgressBar",
+      "displayPriority": 10
+    }
+  ],
+  "functions": [],
+  "events": [],
+  "dataTypes": [
+    {
+      "schema": "Schema/Types.Schema.json"
+    }
+  ]
+}

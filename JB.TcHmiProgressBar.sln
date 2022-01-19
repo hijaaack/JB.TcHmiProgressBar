@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1738
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{3B740506-4966-4147-AB1F-357FE08946EA}") = "JB.TcHmiProgressBar", "JB.TcHmiProgressBar\JB.TcHmiProgressBar.hmiextproj", "{55C8B09E-419E-40FB-8ECF-12CA6BD69D4A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|TwinCAT HMI = Debug|TwinCAT HMI
+		Release|TwinCAT HMI = Release|TwinCAT HMI
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{55C8B09E-419E-40FB-8ECF-12CA6BD69D4A}.Debug|TwinCAT HMI.ActiveCfg = Debug|TwinCAT HMI
+		{55C8B09E-419E-40FB-8ECF-12CA6BD69D4A}.Debug|TwinCAT HMI.Build.0 = Debug|TwinCAT HMI
+		{55C8B09E-419E-40FB-8ECF-12CA6BD69D4A}.Release|TwinCAT HMI.ActiveCfg = Release|TwinCAT HMI
+		{55C8B09E-419E-40FB-8ECF-12CA6BD69D4A}.Release|TwinCAT HMI.Build.0 = Release|TwinCAT HMI
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {686A41C9-9A4F-40DB-A987-34C2A36C10AD}
+	EndGlobalSection
+EndGlobal

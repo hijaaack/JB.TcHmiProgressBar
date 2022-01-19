@@ -1,0 +1,29 @@
+﻿<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>JB.TcHmiProgressBar</id>
+    <version>1.0.0</version>
+    <title>TcHmiProgressBar</title>
+    <authors>Jack Borelius</authors>
+    <owners>Jack Borelius</owners>
+    <projectUrl>https://github.com/hijaaack/JB.TcHmiProgressBar</projectUrl>
+    <license type="expression">MIT</license>
+    <icon>images/logo.png</icon>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Animated ProgressBar with Label.</description>
+    <releaseNotes>First release</releaseNotes>
+    <copyright>Copyright 2022</copyright>
+    <tags>TwinCAT HMI</tags>
+    <dependencies>
+      <group targetFramework="native1.12-tchmi">
+        <dependency id="Beckhoff.TwinCAT.HMI.Framework" version="12.752.0" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="**\*"
+          target="runtimes\native1.12-tchmi\"
+          exclude=".eslintrc.json;**\*.nuspec;**\*.tpl.json;**\*.hmi*proj;**\~*;**\*.tmp;**\tmp*;**\*.user;**\tsconfig.json;**\*.log;**\*.bak;**\obj\**\*;packages.config;packages.xsd;.hmiframework\**\*;.hmipkgs\**\*;.git;.gitignore;.gitattributes" />
+    <file src="images\logo.png" target="images\" />
+  </files>
+</package>

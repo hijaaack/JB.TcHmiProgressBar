@@ -1,0 +1,24 @@
+﻿{
+  "modules": [
+    {
+      "type": "Package",
+      "nugetId": "Beckhoff.TwinCAT.HMI.Framework"
+    },
+    {
+      "type": "Control",
+      "basePath": "TcHmiProgressBarControl/",
+      "descriptionFile": "Description.json",
+      "toolboxCategory": "TcHmiProgressBar:1632"
+    }
+  ],
+  "provideMetadata": {
+    "toolbox": {
+      "TcHmiProgressBar": {
+        "1632": "JB: Controls",
+        "200": "TcHmiProgressBarControl"
+      }
+    }
+  },
+  "$schema": ".hmiframework/Schema/Manifest.Schema.json",
+  "apiVersion": 1
+}

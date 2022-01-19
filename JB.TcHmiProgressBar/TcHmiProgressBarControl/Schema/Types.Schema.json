@@ -1,0 +1,11 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "definitions": {
+    "TcHmi.Controls.JB_TcHmiProgressBar.JB_TcHmiProgressBarControl": {
+      "type": "object",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkControlType": "JB_TcHmiProgressBarControl",
+      "frameworkControlNamespace": "TcHmi.Controls.JB_TcHmiProgressBar"
+    }
+  }
+}
